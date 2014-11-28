@@ -68,7 +68,8 @@ group :development, :test do
   gem 'better_errors', '~> 2.0.0'
   # allow use Better Errors' advanced features (REPL, local/instance variable inspection, pretty stack frame names)
   gem 'binding_of_caller', '~> 0.7.2'
-
+  # Great Ruby dubugging companion: pretty print Ruby objects to visualize their structure
+  gem 'awesome_print', '~> 1.2.0'
   # A thin and fast web server
   gem 'thin', '>= 1.6.2'
 end
