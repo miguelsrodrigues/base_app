@@ -64,6 +64,10 @@ group :development, :test do
   gem 'dotenv-rails', '~> 1.0.2'
   # Preview mail in the browser instead of sending.
   gem 'letter_opener', '~> 1.2.0'
+   # Provides a better error page for Rails
+  gem 'better_errors', '~> 2.0.0'
+  # allow use Better Errors' advanced features (REPL, local/instance variable inspection, pretty stack frame names)
+  gem 'binding_of_caller', '~> 0.7.2'
 
   # A thin and fast web server
   gem 'thin', '>= 1.6.2'
