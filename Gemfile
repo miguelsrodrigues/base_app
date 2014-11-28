@@ -5,8 +5,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.6'
 # Use mysql as the database for Active Record
 gem 'mysql2'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -23,9 +21,6 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -38,3 +33,31 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# use haml instead of html
+gem 'haml'
+# Haml-rails provides Haml generators for Rails 
+gem 'haml-rails', '~> 0.5.3'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.3'
+# use Bootstrap with Sass
+gem 'bootstrap-sass', '~> 3.2.0'
+# add browser vendor prefixes automatically
+gem 'autoprefixer-rails'
+
+# Forms made easy
+gem 'simple_form', '~> 3.0.2'
+# Unobtrusive nested forms handling, using jQuery
+gem 'cocoon', '~> 1.2.6'
+# A date and time picker for Twitter Bootstrap in Rails using Simple Form
+gem 'datetimepicker-rails', :git => 'git://github.com/zpaulovics/datetimepicker-rails.git', :branch => 'master', :submodules => true
+gem 'momentjs-rails', '>= 2.8.1', :github => 'derekprior/momentjs-rails'
+
+
+group :development, :test do
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+
+  # A thin and fast web server
+  gem 'thin', '>= 1.6.2'
+end
