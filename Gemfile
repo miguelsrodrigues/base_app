@@ -55,6 +55,10 @@ gem 'cocoon', '~> 1.2.6'
 gem 'datetimepicker-rails', :git => 'git://github.com/zpaulovics/datetimepicker-rails.git', :branch => 'master', :submodules => true
 gem 'momentjs-rails', '>= 2.8.1', :github => 'derekprior/momentjs-rails'
 
+# New Relic is a performance management system
+gem 'newrelic_rpm', '~> 3.9.7.266'
+# notifier gem, when an uncaught exception occurs, Airbrake will POST the relevant data to the Airbrake server specified in your environment
+gem 'airbrake'
 
 group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -70,6 +74,8 @@ group :development, :test do
   gem 'binding_of_caller', '~> 0.7.2'
   # Great Ruby dubugging companion: pretty print Ruby objects to visualize their structure
   gem 'awesome_print', '~> 1.2.0'
+  # help to kill N+1 queries and unused eager loading.
+  gem 'bullet', '~> 4.14.0'
   # A thin and fast web server
   gem 'thin', '>= 1.6.2'
 end
