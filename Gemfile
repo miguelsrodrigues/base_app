@@ -60,6 +60,11 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
+  # Loads environment variables from `.env`.
+  gem 'dotenv-rails', '~> 1.0.2'
+  # Preview mail in the browser instead of sending.
+  gem 'letter_opener', '~> 1.2.0'
+
   # A thin and fast web server
   gem 'thin', '>= 1.6.2'
 end
