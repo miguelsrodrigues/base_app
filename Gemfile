@@ -62,7 +62,22 @@ gem 'airbrake'
 
 group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  # gem 'spring'
+
+  # Is a testing framework
+  gem 'rspec-rails', '~> 3.1.0'
+  # Is a fixtures replacement
+  gem 'factory_girl_rails', '~> 4.5.0'
+  # Making tests easy on the fingers and eyes
+  gem 'shoulda-matchers', '~> 2.7.0'
+  # # Guard::RSpec automatically run your specs (much like autotest)
+  gem 'guard-rspec', '~> 4.3.1'
+  # Automatically reloads your browser when 'view' files are modified.
+  gem 'guard-livereload', '~> 2.4.0'
+  # testing: it simulates how a user would interact with a website
+  gem 'capybara', '~> 2.4.4'
+  # Supporting gem for Rails Panel (Google Chrome extension for Rails development)
+  gem 'meta_request', '~> 0.3.4'
 
   # Loads environment variables from `.env`.
   gem 'dotenv-rails', '~> 1.0.2'
