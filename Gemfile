@@ -44,6 +44,8 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'bootstrap-sass', '~> 3.2.0'
 # add browser vendor prefixes automatically
 gem 'autoprefixer-rails'
+# bootstrap-sass extras, idea and codes from twitter-bootstrap-rails
+gem 'bootstrap-sass-extras'
 
 # Forms made easy
 gem 'simple_form', '~> 3.0.2'
