@@ -47,6 +47,11 @@ gem 'autoprefixer-rails'
 # bootstrap-sass extras, idea and codes from twitter-bootstrap-rails
 gem 'bootstrap-sass-extras'
 
+# Devise authentication
+gem 'devise', '~> 3.4.1'
+# Simple authorization solution for Rails which is decoupled from user roles. All permissions are stored in a single location
+gem 'cancan', '~> 1.6.10'
+
 # Forms made easy
 gem 'simple_form', '~> 3.0.2'
 # Unobtrusive nested forms handling, using jQuery
